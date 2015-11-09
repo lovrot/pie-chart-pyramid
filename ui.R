@@ -8,7 +8,7 @@ fluidPage(
     mainPanel(
         plotOutput("plot"),
         helpText(
-            "Inspiration: ",
+            "A paraphrase of ",
             a("http://flowingdata.com/2014/12/01/pie-chart-pyramid/",
                 href="http://flowingdata.com/2014/12/01/pie-chart-pyramid/",
                 target="_blank")),
