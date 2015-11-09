@@ -11,5 +11,10 @@ fluidPage(
             "Inspiration: ",
             a("http://flowingdata.com/2014/12/01/pie-chart-pyramid/",
                 href="http://flowingdata.com/2014/12/01/pie-chart-pyramid/",
+                target="_blank")),
+        helpText(
+            "Source code available at ",
+            a("github.com/lovrot/pie-chart-pyramid",
+                href="https://github.com/lovrot/pie-chart-pyramid",
                 target="_blank")))
 )
