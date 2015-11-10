@@ -4,7 +4,7 @@ library(ggplot2)
 fluidPage(
     titlePanel("Pie chart pyramid"),
     sidebarPanel(
-        sliderInput("alpha", "Angle", min=0, max=90, value=20)),
+        sliderInput("alpha_degrees", "Angle", min=0, max=90, value=20)),
     mainPanel(
         plotOutput("plot"),
         helpText(
