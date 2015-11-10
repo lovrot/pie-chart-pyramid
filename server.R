@@ -29,20 +29,25 @@ function(input, output) {
 
         beta <- derive_beta_angles()
 
-        binoculars_view <- data.frame(
-            part=factor(names(palette_part), levels=names(palette_part)),
-            radians=c(2*pi - 2*beta[1], beta[1] + beta[2], beta[1] - beta[2]))
+        binoculars <- data.frame(
+            part=factor(
+                c("Sky", "Sunny side of pyramid",
+                    "Shady side of pyramid", "Sky"),
+                levels=c("Sky", "Sunny side of pyramid",
+                    "Shady side of pyramid")),
+            radians=c(pi - beta[1], beta[1] + beta[2],
+                beta[1] - beta[2], pi - beta[1]))
 
-        gg <- ggplot(data=binoculars_view,
+        gg <- ggplot(data=binoculars,
             aes(x=factor(1), y=radians, fill=part)) +
             geom_bar(width=1, stat="identity", position="fill") +
-            coord_polar(theta="y", start=pi + beta[1], direction=-1) +
-            scale_x_discrete(breaks=NULL) +
-            scale_y_continuous(breaks=NULL) +
-            scale_fill_manual(values=palette_part) +
-            theme(panel.grid.major.x=element_blank()) +
-            theme(panel.border=element_blank()) +
-            labs(x="", y="", fill="")
+            scale_x_discrete(breaks=NULL, name="") +
+            scale_y_continuous(breaks=NULL, name="") +
+            scale_fill_manual(values=palette_part, name="") +
+            theme(
+                panel.grid.major.x=element_blank(),
+                panel.border=element_blank()) +
+            coord_polar(theta="y", direction=-1)
 
         plot(gg)
     }, height=300)
