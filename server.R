@@ -5,10 +5,12 @@ function(input, output) {
 
     palette_part <- c(
         "Sky"="deepskyblue3",
-        "Sunny side of pyramid"="yellow1",
-        "Shady side of pyramid"="yellow3")
+        "Sunny side of pyramid"="yellow2",
+        "Shady side of pyramid"="yellow4")
 
-    h <- 1.1
+    ## Use dimensions of the Great Pyramid of Giza
+    ## https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza
+    h <- 146.5/230.4*sqrt(2)
 
     derive_beta_angles <- reactive({
 
