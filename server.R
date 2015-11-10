@@ -5,8 +5,8 @@ function(input, output) {
 
     palette_part <- c(
         "Sky"="deepskyblue3",
-        "Sunny side of pyramid"="yellow1",
-        "Shady side of pyramid"="yellow3")
+        "Sunny side of pyramid"="yellow2",
+        "Shady side of pyramid"="yellow4")
 
     h <- 1.1
 
