@@ -2,7 +2,7 @@ library(shiny)
 library(ggplot2)
 
 fluidPage(
-    titlePanel("Pie chart pyramid"),
+    titlePanel("An interactive pyramid pie chart"),
     fluidRow(
         column(8,
             p(
