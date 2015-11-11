@@ -47,6 +47,7 @@ function(input, output) {
             scale_y_continuous(breaks=NULL, name="") +
             scale_fill_manual(values=palette_part, name="") +
             theme(
+                legend.text=element_text(size=16),
                 panel.grid.major.x=element_blank(),
                 panel.border=element_blank()) +
             coord_polar(theta="y", direction=-1)
