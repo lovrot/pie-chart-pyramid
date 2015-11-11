@@ -52,6 +52,6 @@ function(input, output) {
             coord_polar(theta="y", direction=-1)
 
         plot(gg)
-    }, height=300)
+    }, width=619, height=294)
 
 }
