@@ -31,5 +31,5 @@ fluidPage(
             href="https://github.com/lovrot/pie-chart-pyramid",
             target="_blank"),
         br(),
-        "Version 0.5.1")
+        "Version 0.5.3")
 )
