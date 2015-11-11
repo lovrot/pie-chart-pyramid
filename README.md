@@ -1,5 +1,5 @@
-A Shiny Application for the Pie Chart Pyramid
-=============================================
+A Shiny application for an interactive pyramid pie chart
+========================================================
 
 This is a toy [Shiny app](http://shiny.rstudio.com/) to familarise myself with 
 this web application framework. The app is deployed at 
