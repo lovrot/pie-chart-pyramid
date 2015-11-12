@@ -14,7 +14,7 @@ fluidPage(
         ),
         column(4,
             wellPanel(
-                sliderInput("alpha_degrees", "Angle", min=0, max=90, value=20))
+                sliderInput("alpha_degrees", "Viewing angle", min=0, max=90, value=20))
         )
     ),
     hr(),
@@ -26,10 +26,10 @@ fluidPage(
             href="http://creativecommons.org/licenses/by/4.0/",
             target="_blank"),
         br(),
-        "Source code available at ",
+        "Source code available at",
         a("github.com/lovrot/pie-chart-pyramid",
             href="https://github.com/lovrot/pie-chart-pyramid",
             target="_blank"),
         br(),
-        "Version 0.5.3")
+        "Version 0.5.4")
 )
