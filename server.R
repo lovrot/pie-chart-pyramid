@@ -3,7 +3,7 @@ library(ggplot2)
 
 function(input, output) {
 
-    palette_part <- c(
+    palette_field <- c(
         "Sky"="deepskyblue3",
         "Sunny side of pyramid"="yellow2",
         "Shady side of pyramid"="yellow4")
@@ -31,17 +31,17 @@ function(input, output) {
 
         beta <- derive_beta_angles()
 
-        parts <- c("Sky", "Sunny side of pyramid", "Shady side of pyramid")
+        fields <- c("Sky", "Sunny side of pyramid", "Shady side of pyramid")
         binoculars <- data.frame(
-            part=factor(parts, levels=parts),
+            field=factor(fields, levels=fields),
             radians=c(2*(pi - beta[1]), beta[1] + beta[2], beta[1] - beta[2]))
 
         gg <- ggplot(data=binoculars,
-            aes(x=factor(1), y=radians, fill=part)) +
+            aes(x=factor(1), y=radians, fill=field)) +
             geom_bar(width=1, stat="identity", position="fill") +
             scale_x_discrete(breaks=NULL, name="") +
             scale_y_continuous(breaks=NULL, name="") +
-            scale_fill_manual(values=palette_part, name="") +
+            scale_fill_manual(values=palette_field, name="") +
             theme(
                 legend.text=element_text(size=16),
                 panel.grid.major.x=element_blank(),
