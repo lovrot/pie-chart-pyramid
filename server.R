@@ -31,14 +31,10 @@ function(input, output) {
 
         beta <- derive_beta_angles()
 
+        parts <- c("Sky", "Sunny side of pyramid", "Shady side of pyramid")
         binoculars <- data.frame(
-            part=factor(
-                c("Sky", "Sunny side of pyramid",
-                    "Shady side of pyramid", "Sky"),
-                levels=c("Sky", "Sunny side of pyramid",
-                    "Shady side of pyramid")),
-            radians=c(pi - beta[1], beta[1] + beta[2],
-                beta[1] - beta[2], pi - beta[1]))
+            part=factor(parts, levels=parts),
+            radians=c(2*(pi - beta[1]), beta[1] + beta[2], beta[1] - beta[2]))
 
         gg <- ggplot(data=binoculars,
             aes(x=factor(1), y=radians, fill=part)) +
@@ -50,7 +46,7 @@ function(input, output) {
                 legend.text=element_text(size=16),
                 panel.grid.major.x=element_blank(),
                 panel.border=element_blank()) +
-            coord_polar(theta="y", direction=-1)
+            coord_polar(theta="y", start=-(pi - beta[1]), direction=-1)
 
         plot(gg)
     }, width=619, height=294)
