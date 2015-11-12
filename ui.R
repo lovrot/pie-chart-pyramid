@@ -14,7 +14,7 @@ fluidPage(
         ),
         column(4,
             wellPanel(
-                sliderInput("alpha_degrees", "Angle", min=0, max=90, value=20))
+                sliderInput("alpha_degrees", "Viewing angle", min=0, max=90, value=20))
         )
     ),
     hr(),
