@@ -26,7 +26,7 @@ fluidPage(
             href="http://creativecommons.org/licenses/by/4.0/",
             target="_blank"),
         br(),
-        "Source code available at ",
+        "Source code available at",
         a("github.com/lovrot/pie-chart-pyramid",
             href="https://github.com/lovrot/pie-chart-pyramid",
             target="_blank"),
