@@ -1,12 +1,9 @@
 A Shiny application for an interactive pyramid pie chart
 ========================================================
 
-This is a toy [Shiny app](http://shiny.rstudio.com/) to familarise myself with 
-this web application framework. The app is deployed at 
-[lovrot.shinyapps.io/pie-chart-pyramid](http://lovrot.shinyapps.io/pie-chart-pyramid).
+This is a toy [Shiny app](http://shiny.rstudio.com/) to familarise myself with this web application framework. The app is deployed at [lovrot.shinyapps.io/pie-chart-pyramid](http://lovrot.shinyapps.io/pie-chart-pyramid).
 
-The graph itself is a paraphrase of 
-[flowingdata.com/2014/12/01/pie-chart-pyramid/](http://flowingdata.com/2014/12/01/pie-chart-pyramid/).
+The graph itself is a paraphrase of [flowingdata.com/2014/12/01/pie-chart-pyramid/](http://flowingdata.com/2014/12/01/pie-chart-pyramid/).
 
 - - -
 
