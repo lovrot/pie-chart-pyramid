@@ -27,8 +27,6 @@ function(input, output) {
 
     output$plot <- renderPlot({
 
-        theme_set(theme_bw())
-
         beta <- derive_beta_angles()
 
         fields <- c("Sky", "Sunny side of pyramid", "Shady side of pyramid")

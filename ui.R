@@ -1,6 +1,8 @@
 library(shiny)
 library(ggplot2)
 
+theme_set(theme_bw())
+
 fluidPage(
     titlePanel("An interactive pyramid pie chart"),
     fluidRow(
